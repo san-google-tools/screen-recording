@@ -1,0 +1,15 @@
+{
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "service.js",
+    "type": "module"
+  },
+  "content_script": [{
+    "js": ["content/index.js"],
+    "matches": ["https://*/*", "http://*/*"]
+  }],
+  "manifest_version": 3,
+  "name": "react-tool-template"
+}
